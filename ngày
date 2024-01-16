@@ -1,0 +1,47 @@
+<<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            Click the button to display a time-based greeting:</p>
+            <input type="number" name=""id ="nhap">
+            <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                var number =document.getElementById("nhap").value;
+                var greeting ;
+                if (number==1){
+                    greeting = "là chủ nhật";
+                }else if (number==2)
+                {
+                    greeting="la thứ hai";
+                }
+                else if (number==3)
+                {
+                    greeting="là thứ ba";
+                }
+                else if (number==4)
+                {
+                    greeting="là thứ tư";
+                }
+                else if (number==5)
+                {
+                    greeting="là thứ năm ";
+                }
+                else if (number==6)
+                {
+                    greeting="là thứ sáu";
+                }
+                else if (number==7)
+                {
+                    greeting="là thứ bảy";
+                }
+                else if (number==8)
+                {
+                    greeting="bạn đã nhập sai lệnh";
+                }
+                document.getElementById("demo").innerHTML=greeting;
+            }
+        </script>
+    </body>
+</html>
